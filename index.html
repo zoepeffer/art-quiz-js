@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fun Gogh Quiz</title>
+  <script src="script/script.js" defer="defer"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark|Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="parallaxContainer" class="parallax-container"></div>
+    <div id="container">
+        <div class="welcome">
+            <h1 id="hallo">Welcome to the Fun Gogh</h1>
+            <h2 id="thanks"></h2>
+            <form id="main-content" action="">
+              <input id="newuser" type="text" placeholder="Username">
+              <button id="login" type="button" >Send!</button>    
+              <div id="hinweis"></div>
+            </form>
+            <div id="start">Start           
+                </div>
+          </div>
+
+
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+</body>
+</html>
+
+
